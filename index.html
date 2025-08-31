@@ -12,12 +12,14 @@
         background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.postimg.cc/W1XN7NdK/Fondo.jpg');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-repeat: no-repeat;
+        min-height: 100vh;
         color: #fff;
         font-family: Inter, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
         text-align: center;
         padding: 20px;
+        margin: 0;
     }
     h1 {
         color: #f0f;
@@ -163,7 +165,7 @@
 
 <script>
     
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyz7Da625LGmo8fvDVinR0EPoXCbnQb-XRjErUC32A2kQnGZg85qK2sw1hpphBzFo8G/exec";
+    const scriptURL = "https://script.google.com/macros/s/AKfycbzBizy3I5WgtLkG6Wy0PeEz0Kwu5SIqbAtGYyoyLU5XKtC84JfU95aZEqaLGyZUgKYW/exec";
 
     function openWaze() {
         window.open("https://waze.com/ul?q=Cl.%2059%20Sur%20%2365-31%2C%20Bogotá", "_blank");
