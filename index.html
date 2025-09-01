@@ -247,9 +247,9 @@
             document.getElementById('buttons').style.display = 'none';
             let msg = document.getElementById('message');
             if (response === 'yes') {
-                msg.textContent = `¡Gracias ${inputName}! Te esperamos en la NEON PARTY 🎉`;
+                msg.innerHTML = `¡Gracias ${inputName}!<br>Te vere en mi NEON PARTY 🎉`;
             } else {
-                msg.textContent = `¡Gracias ${inputName} por avisar! Ojalá puedas en otra ocasión 💜`;
+                msg.innerHTML = `¡Gracias ${inputName} por avisar!<br> Lamento que no puedas asistir, quizas en otra ocasión 💜`;
             }
             msg.style.display = 'block';
 
