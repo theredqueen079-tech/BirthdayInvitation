@@ -50,16 +50,29 @@
 
         .address {
             font-size: 18px;
-            color: #0ff;
-            text-shadow: 0 0 10px #0ff;
+            color: #ff69b4;
+            text-shadow: 0 0 10px #ff69b4;
             margin-bottom: 20px;
             cursor: pointer;
             padding-top: 30px;
+            animation: addressNeon 3s ease-in-out infinite alternate;
         }
 
         .address:hover {
-            color: #ff0;
-            text-shadow: 0 0 15px #ff0;
+            color: #ff1493;
+            text-shadow: 0 0 15px #ff1493, 0 0 25px rgba(255, 20, 147, 0.7);
+        }
+
+        @keyframes addressNeon {
+            from {
+                color: #ff69b4;
+                text-shadow: 0 0 10px #ff69b4;
+            }
+
+            to {
+                color: #ff1493;
+                text-shadow: 0 0 15px #ff1493, 0 0 25px rgba(255, 20, 147, 0.7);
+            }
         }
 
         .envelope {
@@ -114,8 +127,24 @@
             width: 300px;
             max-width: 90%;
             border-radius: 15px;
-            box-shadow: 0 0 15px #0ff;
+            box-shadow: 0 0 15px #00ff84, 0 0 25px rgba(0, 255, 132, 0.5);
+            animation: invitationNeon 4s ease-in-out infinite alternate;
+            transition: all 0.3s ease;
+        }
 
+        .invitation img:hover {
+            box-shadow: 0 0 20px #00ff84, 0 0 30px #00ff84, 0 0 40px rgba(0, 255, 132, 0.7);
+            transform: scale(1.02);
+        }
+
+        @keyframes invitationNeon {
+            from {
+                box-shadow: 0 0 15px #00ff84, 0 0 25px rgba(0, 255, 132, 0.5);
+            }
+
+            to {
+                box-shadow: 0 0 20px #00ff84, 0 0 30px #00ff84, 0 0 40px rgba(0, 255, 132, 0.7);
+            }
         }
 
         .buttons {
@@ -196,7 +225,7 @@
 
         <div class="invitation" id="invitation">
             <img src="https://i.postimg.cc/cJCJL0wQ/invitacion.png" alt="Invitación Mis 15" />
-            <div class="address" onclick="openWaze()">📍 Ubicación: Cl. 59 Sur #65-31, Bogotá</div>
+            <div class="address" onclick="openWaze()">📍 Ver ubicación: Cl. 59 Sur #65-31, Bogotá</div>
         </div>
         <div class="buttons" id="buttons">
             <input type="text" class="name-input" id="guestNameInput" placeholder="Ingresa tu nombre completo" />
@@ -212,13 +241,13 @@
         <div class="message" id="message"></div>
     </div>
     <div class="message" id="message"></div>
-</div>
+    </div>
 
-<div style="height: 100px;"></div>
+    <div style="height: 100px;"></div>
 
-<footer class="muted" style="margin:12px 0 28px; text-align: center; color: #888; font-size: 14px;">
-    Hecho con 💜 y brillos neón • By HMGitHub Pages
-</footer>
+    <footer class="muted" style="margin:12px 0 28px; text-align: center; color: #888; font-size: 14px;">
+        Made with love 💜 and sparkles • By H&D GitHub Pages
+    </footer>
 
     <script>
 
@@ -268,4 +297,5 @@
     </script>
 
 </body>
+
 </html>
